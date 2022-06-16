@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Upcoming Project</title>
+</head>
+
+<body>
+
+    <div id="mad_libs_generator" style="width: 100%;text-align:justify;">
+        <style>
+            h1 {
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 28px;
+            }
+            
+            div {
+                border-width: 0%;
+                font-size: 20px;
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                margin-right: 0px;
+                padding-right: 0px;
+                color: black;
+                background-color: lightgoldenrodyellow;
+                line-height: 28px;
+            }
+            
+            pre {
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+                text-align: justify;
+                margin-right: 0px;
+                padding-right: 0px;
+                color: black;
+                background-color: lightgoldenrodyellow;
+                font-weight: 100;
+                padding-left: 1cm;
+                padding-right: 1cm;
+            }
+            
+            img {
+                width: 60%;
+                height: 300px;
+                align-items: center;
+                line-height: 28px;
+            }
+        </style>
+        <center><img src="img\mad_libs.jpg"></center>
+        <h1 style="text-align: center">Mad Libs Generator</h1>
+        <p>Mad libs generator is a fun game that is usually played by kids.</p>
+        <p>In this python game user has to enter substitutes for blanks in the story without knowing the story. It will be fun to read aloud the stories after filling the blanks.</p>
+        <h3>Python Mad Libs Generator</h3>
+        <p>The objective of this project is to develop a Mad Libs Generator python project. In this project, the user first has to pick a story by the title of the story. Then the user has to enter specific words like a noun, adverb, verb, food, adjective,
+            etc, according to the requirements. And then the story will be generated.</p>
+        <p>This is a python project for absolute beginners and is developed using the basic concept of python and tkinter.</p>
+        <h2>Steps to develop Mad Libs Generator Game</h2>
+        <h3>Project Prerequisites</h3>
+        <p>Tkinter is a GUI Python library used to build GUI applications in the fastest and easiest way. To install the library, you can use the pip install command in command line:</p>
+        <pre class="EnlighterJSRAW" data-enlighter-language="null">pip install tkinter
+        </pre>
+        <h3>Download Python Mad Libs Generator Code</h3>
+        <p>Please download the source code of mad libs generator project: <a href="https://data-flair.s3.ap-south-1.amazonaws.com/python-projects/python-mad-libs-generator.zip"><strong>Python Mad Libs Generator</strong></a></p>
+        <h3>Project File Structure</h3>
+        <p>These are the required steps to build Mad Libs generator python project:</p>
+        <ul>
+            <li>Import modules</li>
+            <li>Create a display window</li>
+            <li>Define functions</li>
+            <li>Create buttons</li>
+        </ul>
+        <h4>1. Import Modules</h4>
+        <pre class="EnlighterJSRAW" data-enlighter-language="null">from tkinter import *
+        </pre>
+        <p>The first step to build a project is to import the required modules. In this project, we import tkinter module.</p>
+        <h4>2. Create a Display Window</h4>
+        <p>
+            <pre class="EnlighterJSRAW" data-enlighter-language="null">root = Tk()
+        root.geometry('300x300')
+        root.title('DataFlair-Mad Libs Generator')
+        Label(root, text= 'Mad Libs Generator \n Have Fun!' , font = 'arial 20 bold').pack()
+        Label(root, text = 'Click Any One :', font = 'arial 15 bold').place(x=40, y=80)
+        </pre>
+            <ul>
+                <li><strong>Tk()</strong> initialized tkinter which means window created</li>
+                <li><strong>geometry()</strong> used when we want to set the width and height of the window</li>
+                <li><strong>title()</strong> used to give the title of the window</li>
+                <li><strong>Label()</strong> widget use to display text that users can’t able to modify</li>
+                <li><strong>root</strong> is the name which we give to our window</li>
+                <li><strong>text</strong> takes the text we want to display on the label</li>
+                <li><strong>font</strong> used to set the size and type of fonts</li>
+                <li><strong>pack</strong> organized widget in block</li>
+                <li><strong>place()</strong> used when we want to place widgets in a specific position</li>
+            </ul>
+            <h4>3. Define Function</h4>
+            <pre class="EnlighterJSRAW" data-enlighter-language="null">def madlib1():
+        
+            animals= input('enter a animal name : ')
+            profession = input('enter a profession name: ')
+            cloth = input('enter a piece of cloth name: ')
+            things = input('enter a thing name: ')
+            name= input('enter a name: ')
+            place = input('enter a place name: ')
+            verb = input('enter a verb in ing form: ')
+            food = input('food name: ')
+            print('say ' + food + ', the photographer said as the camera flashed! ' + name + ' and 
+            I had gone to ' + place +' to get our photos taken on my birthday. 
+            The first photo we really wanted was a picture of us dressed as ' + animals + ' pretending 
+            to be a ' + profession + '. when we saw the second photo, it was exactly what I wanted. 
+            We both looked like ' + things + ' wearing ' + cloth + ' and ' + verb + ' --exactly what I had in mind')
+        
+        
+        def madlib2():
+           
+            adjactive = input('enter adjective : ')
+            color = input('enter a color name : ')
+            thing = input('enter a thing name :')
+            place = input('enter a place name : ')
+            person= input('enter a person name : ')
+            adjactive1 = input('enter a adjactive : ')
+            insect= input('enter a insect name : ')
+            food = input('enter a food name : ')
+            verb = input('enter a verb name : ')
+        
+            print('Last night I dreamed I was a ' +adjactive+ ' butterfly with ' + color+ ' splocthes that looked like '+thing+ ' 
+            .I flew to ' + place+ ' with my bestfriend and '+person+ ' who 
+            was a '+adjactive1+ ' ' +insect +' .We ate some ' +food+ ' when we got there and then
+             decided to '+verb+ ' and the dream ended when I said-- lets ' +verb+ '.')
+        
+        
+        def madlib3():
+        
+            person = input('enter person name: ')
+            color = input('enter color : ')
+            foods = input('enter food name : ')
+            adjective = input('enter aa adjective name: ')
+            thing = input('enter a thing name : ')
+            place = input('enter place : ')
+            verb = input('enter verb : ')
+            adverb = input('enter adverb : ')
+            food = input('enter food name: ')
+            things = input('enter a thing name : ')
+           
+            print('Today we picked apple from '+person+ "'s Orchard. I had no idea there were so many different varieties of apples. 
+            I ate " +color+ ' apples straight off the tree that tested like '+foods+ '. 
+            Then there was a '+adjective+ ' apple that looked like a ' + thing + '.When our bag were full, 
+            we went on a free hay ride to '+place+ ' and back. It ended at a hay pile where we got to ' +verb+ ' ' +adverb+ '.
+            I can hardly wait to get home and cook with the apples. We are going to make appple '+food+ ' and '+things+' pies!.')  
+        </pre>
+            <ul>
+                <li><strong>input(</strong>) field takes the input from the user</li>
+                <li><strong>print()</strong> will print the text given in it.</li>
+            </ul>
+            <h4>4. Define Buttons</h4>
+            <pre class="EnlighterJSRAW" data-enlighter-language="null">Button(root, text= 'The Photographer', font ='arial 15', command= madlib1, bg = 'ghost white').place(x=60, y=120)
+        Button(root, text= 'apple and apple', font ='arial 15', command = madlib3 , bg = 'ghost white').place(x=70, y=180)
+        Button(root, text= 'The Butterfly', font ='arial 15', command = madlib2, bg = 'ghost white').place(x=80, y=240)
+        
+        root.mainloop()
+        </pre>
+        </p>
+        <p><strong>Button()</strong> widget used to display buttons on our tkinter window</p>
+        <p>command is called when the button is click and it is used to call the function</p>
+        <p><strong>root.mainloop()</strong> used when we want to run our program</p>
+        <!-- <h4>Mad Libs Generator Game Output</h4> -->
+        <!-- <p>
+            <a href="https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output.png"><img class="aligncenter size-full wp-image-83164" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output.png"
+                    alt="mad libs generator output" width="1366" height="708" data-srcset="https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output.png 1366w, https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output-300x155.png 300w, https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output-1024x531.png 1024w, https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output-150x78.png 150w, https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output-768x398.png 768w, https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output-720x373.png 720w, https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output-520x270.png 520w, https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/09/mad-libs-generator-output-320x166.png 320w"
+                    data-sizes="(max-width: 1366px) 100vw, 1366px" /></a>
+        </p> -->
+        <h2>Summary</h2>
+        <p>We have successfully developed the mad libs generator python project. We used tkinter library for rendering graphics on a display window and learn how to create buttons widget and pass the function to the button. In this way, we build this python
+            project.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
