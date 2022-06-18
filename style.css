@@ -1,0 +1,29 @@
+
+
+
+
+.introduction{
+    margin-top:1vh;
+    margin-top: 10%;
+    
+}
+
+
+@media screen and (max-width: 768px){
+    .introduction{
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .footer_bottom{
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .collegeurl_navgitation{
+       flex-wrap: wrap;
+       justify-content: left;
+    }
+    .profile{
+       flex-wrap: wrap;
+       justify-content: right;
+    }
+ }
