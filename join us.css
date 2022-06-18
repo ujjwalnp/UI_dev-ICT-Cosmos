@@ -186,7 +186,7 @@ header .icons i{
 	left: calc(50% - 50px);
 }
 h1{
-	top-margin: 0px;
+	top: 0px;
 	padding: 0 0 20px;
 	text-align: center;
 	font-size: 22px;
